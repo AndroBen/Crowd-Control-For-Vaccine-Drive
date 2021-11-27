@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function age()
+{
+   if(document.getElementById("t1").value<18)
+            {
+             window.alert("restricted");
+	     window.location.href="corona.html"
+            } 
+else{
+window.location.href="con4.php";
+}			
+}
+</script>
+
+</head>
+<body>
+<div class="container">
+<div class="title">Age Verification</div>
+<div class="content">
+<form>
+<div class="user-details">
+<div class="input-box">
+                    <span class="details">Age</span>
+                    <input type="text" id="t1" placeholder="Enter your age" autocomplete="off" required>
+                </div>
+</div>
+<button type="button" onclick="age()">check</button>
+</form>
+</div>
+</div>
+</body>
+</html>
